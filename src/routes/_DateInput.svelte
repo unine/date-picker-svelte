@@ -13,6 +13,7 @@
   let closeOnSelection: boolean
   let browseWithoutSelecting: boolean
   let format: string
+  let name = 'date'
 </script>
 
 <Split>
@@ -28,6 +29,7 @@
     bind:disabled
     bind:closeOnSelection
     bind:browseWithoutSelecting
+    {name}
   />
 
   <svelte:fragment slot="right">

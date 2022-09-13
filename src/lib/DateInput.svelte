@@ -139,12 +139,15 @@
       visible = false
     }
   }
+
+  export let name = 'datePickerInput'
 </script>
 
 <div class="date-time-field" on:focusout={onFocusOut} on:keydown={keydown}>
   <input
     class:invalid={!valid}
     type="text"
+    {name}
     bind:value={text}
     {placeholder}
     {disabled}
