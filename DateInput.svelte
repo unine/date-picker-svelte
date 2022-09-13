@@ -124,6 +124,7 @@
     }
   }
   export let name = 'dateInput'
+  export let inputClass = 'dateInput'
 </script>
 
 <div class="date-time-field" on:focusout={onFocusOut} on:keydown={keydown}>
@@ -131,6 +132,7 @@
     class:invalid={!valid}
     type="text"
     {name}
+    class={inputClass}
     bind:value={text}
     {placeholder}
     {disabled}
