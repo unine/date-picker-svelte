@@ -139,6 +139,7 @@
     on:focus={() => (visible = true)}
     on:mousedown={() => (visible = true)}
     on:input={input}
+    autocomplete="off"
   />
   {#if visible && !disabled}
     <div class="picker" class:visible transition:fly={{ duration: 80, easing: cubicInOut, y: -5 }}>
